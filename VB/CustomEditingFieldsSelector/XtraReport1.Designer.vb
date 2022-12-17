@@ -1,5 +1,7 @@
-﻿Namespace CustomEditingFieldsSelector
-    Partial Public Class XtraReport1
+Namespace CustomEditingFieldsSelector
+
+    Partial Class XtraReport1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,21 +12,21 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Designer generated code"
-
+#Region "Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
         ''' </summary>
         Private Sub InitializeComponent()
             Me.components = New System.ComponentModel.Container()
-            Dim objectConstructorInfo1 As New DevExpress.DataAccess.ObjectBinding.ObjectConstructorInfo()
+            Dim objectConstructorInfo1 As DevExpress.DataAccess.ObjectBinding.ObjectConstructorInfo = New DevExpress.DataAccess.ObjectBinding.ObjectConstructorInfo()
             Me.Detail = New DevExpress.XtraReports.UI.DetailBand()
             Me.enumLabel = New DevExpress.XtraReports.UI.XRLabel()
             Me.dateTimeLabel = New DevExpress.XtraReports.UI.XRLabel()
@@ -35,12 +37,12 @@
             Me.TopMargin = New DevExpress.XtraReports.UI.TopMarginBand()
             Me.BottomMargin = New DevExpress.XtraReports.UI.BottomMarginBand()
             Me.objectDataSource1 = New DevExpress.DataAccess.ObjectBinding.ObjectDataSource(Me.components)
-            CType(Me.objectDataSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.objectDataSource1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me), System.ComponentModel.ISupportInitialize).BeginInit()
             ' 
             ' Detail
             ' 
-            Me.Detail.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() { Me.enumLabel, Me.dateTimeLabel, Me.intLabel, Me.xrLabel3, Me.xrLabel4, Me.xrLabel5})
+            Me.Detail.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.enumLabel, Me.dateTimeLabel, Me.intLabel, Me.xrLabel3, Me.xrLabel4, Me.xrLabel5})
             Me.Detail.HeightF = 127.0833F
             Me.Detail.Name = "Detail"
             Me.Detail.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
@@ -48,7 +50,7 @@
             ' 
             ' enumLabel
             ' 
-            Me.enumLabel.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "EnumProperty")})
+            Me.enumLabel.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "EnumProperty")})
             Me.enumLabel.EditOptions.Enabled = True
             Me.enumLabel.LocationFloat = New DevExpress.Utils.PointFloat(193.75F, 77.70831F)
             Me.enumLabel.Multiline = True
@@ -58,7 +60,7 @@
             ' 
             ' dateTimeLabel
             ' 
-            Me.dateTimeLabel.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "DateTimeProperty", "{0:d}")})
+            Me.dateTimeLabel.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "DateTimeProperty", "{0:d}")})
             Me.dateTimeLabel.EditOptions.Enabled = True
             Me.dateTimeLabel.LocationFloat = New DevExpress.Utils.PointFloat(193.75F, 44.37501F)
             Me.dateTimeLabel.Multiline = True
@@ -68,7 +70,7 @@
             ' 
             ' intLabel
             ' 
-            Me.intLabel.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Int32Property")})
+            Me.intLabel.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Int32Property")})
             Me.intLabel.EditOptions.Enabled = True
             Me.intLabel.LocationFloat = New DevExpress.Utils.PointFloat(193.75F, 10.00001F)
             Me.intLabel.Multiline = True
@@ -123,26 +125,33 @@
             ' 
             ' XtraReport1
             ' 
-            Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() { Me.Detail, Me.TopMargin, Me.BottomMargin})
-            Me.ComponentStorage.AddRange(New System.ComponentModel.IComponent() { Me.objectDataSource1})
+            Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() {Me.Detail, Me.TopMargin, Me.BottomMargin})
+            Me.ComponentStorage.AddRange(New System.ComponentModel.IComponent() {Me.objectDataSource1})
             Me.DataSource = Me.objectDataSource1
             Me.Version = "17.1"
-            CType(Me.objectDataSource1, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
-
+            CType((Me.objectDataSource1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me), System.ComponentModel.ISupportInitialize).EndInit()
         End Sub
 
-        #End Region
-
+#End Region
         Private Detail As DevExpress.XtraReports.UI.DetailBand
+
         Private TopMargin As DevExpress.XtraReports.UI.TopMarginBand
+
         Private BottomMargin As DevExpress.XtraReports.UI.BottomMarginBand
+
         Private intLabel As DevExpress.XtraReports.UI.XRLabel
+
         Private xrLabel3 As DevExpress.XtraReports.UI.XRLabel
+
         Private xrLabel4 As DevExpress.XtraReports.UI.XRLabel
+
         Private xrLabel5 As DevExpress.XtraReports.UI.XRLabel
+
         Private enumLabel As DevExpress.XtraReports.UI.XRLabel
+
         Private dateTimeLabel As DevExpress.XtraReports.UI.XRLabel
+
         Private objectDataSource1 As DevExpress.DataAccess.ObjectBinding.ObjectDataSource
     End Class
 End Namespace
