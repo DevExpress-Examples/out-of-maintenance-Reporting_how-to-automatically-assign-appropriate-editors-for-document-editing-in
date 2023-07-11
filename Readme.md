@@ -6,9 +6,9 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [Data.cs](./CS/CustomEditingFieldsSelector/Data.cs) (VB: [Data.vb](./VB/CustomEditingFieldsSelector/Data.vb))
-* [MainWindow.xaml](./CS/CustomEditingFieldsSelector/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/CustomEditingFieldsSelector/MainWindow.xaml))
-* **[TypeBasedEditorTemplateSelector.cs](./CS/CustomEditingFieldsSelector/TypeBasedEditorTemplateSelector.cs) (VB: [TypeBasedEditorTemplateSelector.vb](./VB/CustomEditingFieldsSelector/TypeBasedEditorTemplateSelector.vb))**
+* [Data.cs](./CS/Data.cs) (VB: [Data.vb](./VB/Data.vb))
+* [MainWindow.xaml](./CS/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/MainWindow.xaml))
+* **[TypeBasedEditorTemplateSelector.cs](./CS/TypeBasedEditorTemplateSelector.cs) (VB: [TypeBasedEditorTemplateSelector.vb](./VB/TypeBasedEditorTemplateSelector.vb))**
 <!-- default file list end -->
 # How to automatically assign appropriate editors for document editing in Print Preview
 
